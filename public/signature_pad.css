@@ -1,0 +1,19 @@
+#signature-pad,
+#signature-pad--placeholder {
+	position: absolute;
+	left: -90px;
+	top: -100px;
+	transform: scale(0.5);
+}
+
+#clear-btn {
+	font-size: 10px;
+	letter-spacing: 0px;
+	padding: 0;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 40px;
+	height: 23px;
+	visibility: hidden;
+}

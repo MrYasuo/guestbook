@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0" />
+    <meta name="description" content="guest book" />
+    <link rel="stylesheet" type="text/css" href="/editor.css" />
+    <link rel="stylesheet" type="text/css" href="/caret.css" />
+    <link rel="stylesheet" type="text/css" href="/book.css" />
+    <link rel="stylesheet" type="text/css" href="/button.css" />
+    <link rel="stylesheet" type="text/css" href="/signature_pad.css" />
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <title>Guest Book</title>
+  </head>
+  <body>
+		<div id="book">
+			<div id="left_side">
+				<div class="cover_back_left cover">
+					<p>Thank You!</p>
+					<button id="btn--open">Open</button>
+				</div>
+				<div class="layer1_left layerStatic layer"></div>
+				<div class="layer2_left layerStatic layer"></div>
+				<div class="layer3_left layerStatic layer"></div>
+				<div class="layer4_left layerStatic layer"></div>
+				<div class="layer5 layer5_left layer">
+					<textarea id="input" placeholder="Please write your message in here..."></textarea>
+				</div>
+			</div>
+			<div class="cover_back_mid"></div>
+			<div id="right_side">
+					<div class="cover_back_right cover"></div>
+					<div class="layer1_right layerStatic layer"></div>
+					<div class="layer2_right layerStatic layer"></div>
+					<div class="layer3_right layerStatic layer"></div>
+					<div class="layer4_right layerStatic layer"></div>
+					<div class="layer5 layer5_right layer">
+						<canvas id="signature-pad--placeholder" width="360" height="400"></canvas>
+						<canvas id="signature-pad" width="360" height="400"></canvas>
+						<button id="clear-btn">Clear</button>
+						<button id="btn">Signed</button>
+					</div>
+			</div>
+		</div>
+    <script type="module" src="/dist/index.js"></script>
+		</div>
+  </body>
+</html>

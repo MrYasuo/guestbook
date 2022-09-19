@@ -1,0 +1,345 @@
+body {
+	max-width: 100vw;
+	min-height: 100vw;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#book {
+	perspective: 700px;
+	transform-style: preserve-3d;
+	transform: rotateX(35deg) rotateY(15deg) rotateZ(-15deg);
+	transition: all 1.5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*cover*/
+#back {
+	display: flex;
+	position: relative;
+	width: 500px;
+	justify-content: center;
+	transform-style: preserve-3d;
+}
+
+.cover_back_left {
+	height: 300px;
+	width: 200px;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	border-top-left-radius: 4%;
+	border-bottom-left-radius: 4%;
+	transform: rotateY(5deg);
+	position: relative;
+	box-shadow: inset 4px -4px 4px 1px #635648, inset 7px -7px 4px 0 #221b14;
+	background-color: #2e1800;
+	flex: 50%;
+}
+
+.cover_back_mid {
+	width: 4%;
+	height: 300px;
+	background-image: radial-gradient(
+			circle farthest-corner at 56% -8%,
+			#fff 8%,
+			transparent 0
+		),
+		radial-gradient(
+			circle farthest-corner at 50% 108%,
+			#fff 8%,
+			transparent 0
+		),
+		linear-gradient(
+			90deg,
+			#635648,
+			#2e1800 21%,
+			#635648 30%,
+			#2e1800 48%,
+			#635648 68%,
+			#2e1800 79%,
+			#635648
+		);
+	transform-style: preserve-3d;
+}
+
+.cover_back_right {
+	height: 300px;
+	width: 200px;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	border-top-right-radius: 4%;
+	border-bottom-right-radius: 4%;
+	transform: rotateY(-5deg);
+	box-shadow: inset -4px -4px 4px 1px #635648, inset -7px -7px 4px 0 #221b14;
+	background-color: #2e1800;
+	flex: 50%;
+}
+/*end of cover*/
+
+.text_area {
+	transform-style: preserve-3d;
+	width: 450px;
+	position: absolute;
+}
+
+/*layer1*/
+#layer1 {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	transform-style: preserve-3d;
+	width: 450px;
+}
+
+.layer1_left {
+	height: 255px;
+	width: 210px;
+	border: 1px solid black;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	transform: translate3d(6px, 0px, 0px) rotateY(5deg);
+	border-top-left-radius: 1%;
+	border-bottom-left-radius: 1%;
+	background-color: #fff;
+	box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgb(34 27 20 / 81%);
+}
+
+.layer1_right {
+	height: 255px;
+	width: 210px;
+	border: 1px solid black;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	transform: translate3d(-6px, 0px, 0px) rotateY(-5deg);
+	border-top-right-radius: 1%;
+	border-bottom-right-radius: 1%;
+	background-color: #fff;
+	box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgb(34 27 20 / 81%);
+}
+/*end of layer1*/
+
+/*layer2*/
+#layer2 {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	transform-style: preserve-3d;
+	width: 450px;
+}
+
+.layer2_left {
+	height: 254px;
+	width: 210px;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	transform: translate3d(10px, 0px, 5px) rotateY(5deg);
+	border: 1px solid black;
+	border-top-left-radius: 1%;
+	border-bottom-left-radius: 1%;
+	background-color: #fff;
+	box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgb(34 27 20 / 81%);
+}
+
+.layer2_right {
+	height: 254px;
+	width: 210px;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	transform: translate3d(-10px, 0px, 5px) rotateY(-5deg);
+	border: 1px solid black;
+	border-top-right-radius: 1%;
+	border-bottom-right-radius: 1%;
+	background-color: #fff;
+	box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgb(34 27 20 / 81%);
+}
+/*end of layer2*/
+
+/*layer3*/
+#layer3 {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	transform-style: preserve-3d;
+	width: 450px;
+}
+
+.layer3_left {
+	height: 253px;
+	width: 210px;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	transform: translate3d(12px, 0px, 10px) rotateY(5deg);
+	border: 1px solid black;
+	border-top-left-radius: 1%;
+	border-bottom-left-radius: 1%;
+	background-color: #fff;
+	box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgb(34 27 20 / 81%);
+}
+
+.layer3_right {
+	height: 253px;
+	width: 210px;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	transform: translate3d(-12px, 0px, 10px) rotateY(-5deg);
+	border: 1px solid black;
+	border-top-right-radius: 1%;
+	border-bottom-right-radius: 1%;
+	background-color: #fff;
+	box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgb(34 27 20 / 81%);
+}
+/*end of layer3*/
+
+/*layer4*/
+#layer4 {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	transform-style: preserve-3d;
+	width: 450px;
+}
+
+.layer4_left {
+	height: 252px;
+	width: 210px;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	transform: translate3d(13px, 0px, 15px) rotateY(5deg);
+	border: 1px solid black;
+	border-top-left-radius: 1%;
+	border-bottom-left-radius: 1%;
+	background-color: #fff;
+	box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgb(34 27 20 / 81%);
+}
+
+.layer4_right {
+	height: 252px;
+	width: 210px;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	transform: translate3d(-13px, 0px, 15px) rotateY(-5deg);
+	border: 1px solid black;
+	border-top-right-radius: 1%;
+	border-bottom-right-radius: 1%;
+	background-color: #fff;
+	box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgb(34 27 20 / 81%);
+}
+/*end of layer4*/
+
+/*layer5*/
+#layer5 {
+	display: flex;
+	justify-content: space-between;
+	transform-style: preserve-3d;
+	width: 450px;
+}
+
+.layer5_left {
+	height: 251px;
+	width: 210px;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	transform: translate3d(15px, 0px, 20px) rotateY(5deg);
+	border: 1px solid black;
+	border-top-left-radius: 1%;
+	border-bottom-left-radius: 1%;
+	box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgb(34 27 20 / 81%);
+}
+
+.layer5_left::after {
+	width: 100%;
+	height: 100%;
+	/* opacity: 0.8; */
+	background-image: url("cardboard.png");
+	background-size: cover;
+	background-color: #fff;
+	content: "";
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+}
+
+.flipRight {
+	visibility: hidden;
+	transition: none;
+}
+
+.flipRight::before, .flipRight::after {
+	visibility: visible;
+}
+
+.flipRight::after {
+	transition: all 1.5s ease;
+	transform: rotateY(180deg);
+	transform-origin: right;
+}
+
+.zoomOver::before {
+	height: 251px;
+	width: 16px;
+	content: " ";
+	transform-style: preserve-3d;
+	position: absolute;
+	left: -20px;
+	border: 1px solid black;
+	border-top-right-radius: 1%;
+	border-bottom-right-radius: 1%;
+	background-color: #fff;
+	box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgb(34 27 20 / 81%);
+	transform-origin: center right;
+	transform: rotateY(-90deg);
+}
+
+.layer5_right {
+	height: 251px;
+	width: 210px;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	transform: translate3d(-15px, 0px, 20px) rotateY(-5deg);
+	border: 1px solid black;
+	border-top-right-radius: 1%;
+	border-bottom-right-radius: 1%;
+	background-color: #fff;
+	box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgb(34 27 20 / 81%);
+}
+
+.layer5_right::before {
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	background-image: url("cardboard.png");
+	background-size: cover;
+	content: "";
+	position: absolute;
+}
+/*end of layer5*/
+
+.left {
+	transform-style: preserve-3d;
+	transform-origin: center right;
+	transform: rotateY(180deg);
+	transition: all 5s ease;
+}
+
+.hideLayer {
+	display: none;
+}
+
+.hideImage {
+	visibility: hidden;
+	transition: fast;
+}
+
+#btn {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+#book:hover {
+	transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}

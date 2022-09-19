@@ -1,0 +1,64 @@
+button {
+	font-family: 'Akronim', cursive;
+	font-size: 20px;
+	letter-spacing: 2px;
+	border-bottom-left-radius: 25px 115px;
+	border-bottom-right-radius: 155px 25px;
+	border-top-left-radius: 15px 225px;
+	border-top-right-radius: 25px 150px;
+	border: 2px solid #613f0b;
+	color: #613f0b;
+	background: transparent;
+}
+
+button:hover {
+	border-color: #362306;
+	color: #f9f5d7;
+	background-color: rgba(97, 63, 11, 0.8);
+}
+
+button::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-image: repeating-linear-gradient(45deg, #613f0b, #613f0b 1px, transparent 2px, transparent 5px);
+  backface-visibility: hidden;
+  border-top: 1px solid #613f0b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-size: 7px 7px;
+	transition: all 0.5s ease;
+}
+
+button:hover::after {
+	background-image: repeating-linear-gradient(45deg, #f9f5d7, #f9f5d7 1px, transparent 2px, transparent 5px);
+  border-top: 1px solid #362306;
+	animation: btn-stripe-slide 12s infinite linear forwards;
+}
+
+button:disabled,
+button[disabled],
+button:disabled::after,
+button[disabled]::after,
+button:disabled:hover::after,
+button[disabled]:hover::after {
+	background-color: transparent;
+	border-color: rgba(97, 63, 11, 0.3);
+	color: rgba(97, 63, 11, 0.3);
+}
+
+button:disabled:after,
+button[disabled]:after{
+  background-image: repeating-linear-gradient(45deg, rgba(97, 63, 11, 0.3), rgba(97, 63, 11, 0.3), 1px, transparent 2px, transparent 5px);
+}
+
+@keyframes btn-stripe-slide {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}

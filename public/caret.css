@@ -1,0 +1,26 @@
+#caret {
+  width: 0.5px;
+  height: 1.5em;
+  position: absolute;
+  transition: 0.1s;
+	transform: rotate(15deg);
+}
+
+.caret--focus {
+  animation-name: caretFlash;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  background: black;
+}
+
+@keyframes caretFlash {
+  0% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  80% {
+    background: black;
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
